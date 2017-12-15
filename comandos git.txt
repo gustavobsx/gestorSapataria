@@ -1,0 +1,31 @@
+Para achar uma pasta, devo passando um cd para cada pasta, até chegar no local
+http://gabsferreira.com/criando-e-enviando-arquivos-para-seu-repositorio-no-github/
+
+digita cd + pasta para o diretorio raiz
+q quita o git
+mkdir + algo #cria uma pasta
+pwd #mostra o diretorio que o git esta por padrão
+ls #mostra os arquivos no diretorio
+git --version #mostra a versão atual do git
+git clone (url do repositorio) #pega os arquivos do repositorio
+git config --global color.ui auto #deixa as saidas do git coloridas
+
+git diff id1(espaço)id2 compara dois comits e gera este relatorio:
+linhas pretas não mudaram
+linhas vermelhas com o - foram removidas, sendo assim só existem no commit mais velho
+linhas verdes com o + foram adicionadas, sendo assim só existem no commit mais novo
+
+$ cd asteroids/ #mudei para dentro da pasta asteroids
+$ git checkout (b0678b161fcf74467ed3a63110557e3d6229cfa6) id do commit, retorno para uma versão anterior
+
+Para upar e puxar
+
+upar
+cd indo de pasta em pasta, até chegar no que eu quero
+faz um commit do projeto, para poder adicionar ele
+depois joga um push
+
+puxar
+$ git clone https://github.com/gustavobsx/gestorSapataria
+
+
