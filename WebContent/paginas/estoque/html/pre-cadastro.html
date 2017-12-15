@@ -1,0 +1,50 @@
+<head>
+  <meta charset="UTF-8">
+ </head>
+<div class="col-12" id="slide-5" data-slide="5">
+<div class="col-sm-4"></div>
+	<div class="col-md-7">
+		<div class="cad-funcionario col-sm-4" id="container-pag"> <!-- Inicio do container -->
+		<div class="div-cadastro">
+						<div id="titulo-pag"><b>PRÉ CADASTRO DE ITENS PARA O ESTOQUE</b></div>
+							<fieldset class="fieldset-1">
+										<form class="form-cadastro" >
+													<table class="table table-responsive">
+															<div id="titulo-pag"><b>INSIRA OS DADOS</b></div>
+															<tr><td>Nome do produto:</td> 
+																<td><input type="text" id="nomeProduto" size="20"/></td>
+															</tr>
+															<tr>
+																<td>Cor:</td>
+																<td> <input type="text" id="corProduto" maxlength="20" size="20"/></td>
+															</tr>
+															<tr>
+																<td>Qual Quantia minima?</td>
+																<td> <input type="text" id="quantia" maxlength="20" size="20"/></td>
+															</tr>
+															<tr>
+																<td>Fornecedor:</td>
+																<td><input type="text" id="fornecedor" maxlength="20" size="20"/></td>
+															</tr>
+															<tr>
+																<td>Telefone do Fornecedor:</td>
+																<td><input tye="text" id="telefoneFornecedor" maxlength="11" size="13"/></td>
+															</tr>
+												</table>
+										</form>	
+							</fieldset></br>
+							
+							
+							<div class="titulo-pag">
+								<button class="btn btn-gestor" id="btn-mensagem" onclick="SAPATARIA.estoque.preCadastro()" data-target="#modal-mensagem" >Salvar Pré Cadastro</button>
+								<button class="btn btn-gestor" onclick="SAPATARIA.estoque.limpaPreCadastro()">Limpar Campos</button>
+							</div>
+					</div> <!-- FECHA A DIV TABELA-FORMULARIO -->
+		</div><!-- Fecha o container -->
+		<div class="col-sm-2"></div>
+	</div>
+	</div>
+
+	
+	<script src="../paginas/estoque/js/estoque.js"></script>
+	

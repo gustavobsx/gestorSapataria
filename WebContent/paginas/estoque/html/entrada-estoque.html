@@ -1,0 +1,33 @@
+<meta charset="UTF-8"/>
+	<div class="col-12 " id="slide-4" data-slide="4">
+	<div class="col-sm-4"></div>
+		<div class="ent-estoque col-sm-4"> <!-- Inicio do container -->
+			<div id="titulo-pag"><b>ENTRADA DE ITENS NO ESTOQUE</b></div>
+			<fieldset class="fieldset-1">
+						<form class="form-cadastro-ordens">
+									<table class="table table-responsive">
+										<tr><td>	<div id="titulo-tabela"><b>Entrada rápida para o estoque</b></div> </td></tr>
+										<tr>
+											<td> Produto:
+												<div id= "preCadastros"></div>
+											</td>
+										</tr>
+															
+										<tr><td> Qual a quantidade? <input type="text" id="quantidade" maxlength="5" size="5"></td></tr>
+										<tr><td> Medida? <select id="medida">
+																<option value="0">Unidade de medida</option>
+																<option value="Quilos">Quilos</option>
+																<option value="Unidades">Unidades</option>
+																<option value="Litros">Litros</option>
+														 </select></td></tr>
+								</table>
+						</form>
+			</fieldset></br>
+			<div class="titulo-pag">	
+				<button class="btn btn-gestor" onclick="SAPATARIA.estoque.entrada()">Registrar entrada</button>
+				<button class="btn btn-gestor" onclick="SAPATARIA.entEstoque()" class="btn btn-texto-branco"  >Limpar Campos</button>
+			</div>					
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <script src="../paginas/estoque/js/estoque.js"></script>

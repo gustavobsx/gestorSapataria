@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Sapataria Vieira	</title>
+
+	<!-- Links de Css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+</head>
+  <body>
+    <div class="col-sm-12 navbar navbar-default navbar-fixed-top" id="navbarMain" role="navigation">
+		<div class="container">
+
+			<div class="navbar-collapse">
+
+				<ul class="nav navbar-nav">
+					<li><a href="#" id="menu-link-1" onclick="SAPATARIA.home()" title="Pagina Inicial">PAGINA INICIAL</a></li>
+
+					<!-- menu dropdown para CADASTRO -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">CADASTROS <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a id="menu-link-5" href="#" onclick="SAPATARIA.cadFuncionarios()" title="Funcionários">FUNCIONÁRIOS</a></li>
+								<li class="divider"></li>
+								<li><a id="menu-link-2-1" href="#" onclick="SAPATARIA.cadClientes()" title="Clientes">CLIENTES</a></li>
+							</ul>
+					</li>
+
+					<!-- menu dropdown para TRANSAÇÕES -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle"  data-toggle="dropdown">TRANSAÇÕES <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+                                    <li><a id="menu-link-6" href="#" onclick="SAPATARIA.cadOrdemServico()" title="Ordens de serviço">ORDENS DE SERVIÇO</a></li>
+                                    <li class="divider"></li>
+
+                                        <li class="dropdown-submenu">
+                                                        <a tabindex="-1" href="#">ESTOQUE</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <li><a id="menu-link-4" href="#" onclick="SAPATARIA.preCadastro()" title="Entrada de itens no estoque">PRÉ-CADASTRO</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a id="menu-link-4" href="#" onclick="SAPATARIA.entEstoque()" title="Saida de itens no estoque">ENTRADA</a></li>
+                                                        </ul>
+                                        </li>
+                                                    </li>
+
+
+                                            </ul>
+                                        </li>
+
+                            <!-- menu dropdown para RESULTADOS -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESULTADOS<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a id="menu-link-2-1" href="#" onclick="SAPATARIA.buscaClientes()" title="Busca de clientes">CLIENTES</a></li>
+                                    <li class="divider"></li>
+                                    <li data-slide="4"><a id="menu-link-4" href="#" onclick="SAPATARIA.buscaEstoque()" title="Consulta de estoque">SAIDA DE ESTOQUE</a></li>
+                                    <li class="divider"></li>
+                                    <li data-slide="6-1"><a id="menu-link-6-1" href="#" onclick="SAPATARIA.Fornecedores()" title="Consulta dos pré-cadastros de estoque">PRÉ-CADASTROS</a></li>
+                                    <li class="divider"></li>
+                                    <li data-slide="6-1"><a id="menu-link-6-1" href="#" onclick="SAPATARIA.buscaOrdens()" title="Consulta de ordens de serviço">ORDENS DE SERVIÇO</a></li>
+                                </ul>
+                                <div class="dropdown">
+                                </div>
+                            </li>
+                            <li id="user">
+	                            <table id="tabela-user" class="">
+		                            <tr>
+		                            	<td><a href="#" onclick="SAPATARIA.exibePerfil()"  class="" id="btn-perfil" data-toggle="" title="Seu perfil" method="post">
+		                            		<i class="fa fa-user" aria-hidden="true"></i></a></td>
+		                            	<td><a href="/GestorSapataria/LogoutServlet" title="Deslogue-se" id="btn-logout" data-toggle="" method="post">
+		                            		<i class="fa fa-power-off" aria-hidden="true" ></i></a></td>
+		                            </tr>
+	                           </table>
+                           </li>
+				    </ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+<!--EM CIMA ACABA OS MENUSS -->
+	<div id="logo"></div>
+		<div id="paginas">
+			<div class="slide story" id="slide-1" data-slide="1">
+				<div class="container">
+					<!-- Inicio do container -->
+					<div id="home-row-1" class="row">
+						<!-- Inicio do conteudo da pagina -->
+						<div class="col-12">
+							<!-- Inicio do GRID -->
+							<div id="ordensDia"></div>
+						</div>
+						<!-- Fecha o grid -->
+					</div>
+					<!-- Fecha a row -->
+				</div>
+				<!-- Fecha o container da pagina inicial -->
+			</div>
+		</div>
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog" id="tamanhoModal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" div=""><p id="tituloModal">.</p></h4>
+					</div>
+				<div class="modal-body">
+					<p id="myBody">Testinho</p>
+				</div>
+				<div class="modal-footer" id="pe_modal">
+					<button type="button" class="btn btn-default btn-gestor" data-dismiss="modal"> Fechar</button>
+					<!-- <button type="button" class="btn btn-primary" >Mude</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  acima modal que uso para as aplicações -->
+</body>
+ <!-- SCRIPTS -->
+ 	<script src="../js/cookie.js"></script> 
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+		SAPATARIA.home();
+	});
+	</script>
+	
+</html>

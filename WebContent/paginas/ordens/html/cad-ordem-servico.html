@@ -1,0 +1,54 @@
+<meta charset="UTF-8"/>
+<div class="col-12 slide story" id="slide-6" data-slide="6">
+	<div class="col-sm-3"></div>
+		<div class="cad-ordens col-sm-6">  <!-- Inicio do container -->
+			<div id="titulo-pag"><b>CRIAÇÃO DE ORDENS DE SERVIÇO</b></div>
+			<fieldset class="fieldset-1">
+						<form class="form-cadastro-ordens">
+									<table class="table table-responsive">
+											<div id="titulo-pag"><b>Numero da ordem de serviço: </b><div id ="num-ordem"><b>.</b></div></div>
+											<tr id="titulo-ord">
+												<td>Pesquisar cliente pelo CPF: <input type="text" id="cpf_cliente" maxlength="14" size="16"/>	
+												<a class="btn btn-form1" type="submit" onclick="SAPATARIA.ordem.buscaCPF()">
+												<i class="fa fa-search"></i></a> 
+												</td>
+											</tr>
+											<tr>
+												<td>Nome: <input type="text" id="nome_cliente" size="40" readonly="readonly"/>
+													Telefone: <input type="text" id="telefone_cliente" size="15" readonly="readonly"/></td>
+											</tr>
+											<tr>
+												<td>Quantidade: <input type="text" id="quantidade" size="4"/> Produto <input type="text" id="produto" size="48"/>
+													Valor <input type="text" id="valor" size="10" placeholder="12,99"/> 
+											</tr>
+											<tr>
+												<td>Descrição <textarea id="descricao" rows="5" cols="83"></textarea></td>
+											</tr>
+											<tr class="titulo-pag">
+												<td>Data de entrega: <input name="data" type="text" size="12" maxlength="10" id="data_entrega" placeholder="DD/MM/AAAA">
+											 		Status: <select name="select" id="status">
+																<option value="0">Escolha uma opção</option>
+																<option value="Em Aberto">Em Aberto</option>
+																<option value="Orçamento">Orçamento</option>
+															</select></td>
+											</tr>
+								</table>
+						</form>
+			</fieldset></br>
+			<button class="btn btn-gestor" value="submit" onclick="SAPATARIA.ordem.cadastro()">Abrir Ordem de Serviço</button>
+			<button class="btn btn-gestor" class="btn btn-texto-branco" onclick="SAPATARIA.ordem.limpar()"  >Limpar Campos</button>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+<link href="../paginas/ordens/css/calendario.css" rel="stylesheet" type="text/css"/>
+<script src="../paginas/ordens/js/ordem.js"></script>
+<script type="text/javascript" src="../paginas/ordens/js/calendario.js"></script>
+
+<script>
+	$('#data_entrega').focus(function(){
+				    $(this).calendario({
+				        target:'#data_entrega'
+				    });
+				});
+</script>

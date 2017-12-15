@@ -1,0 +1,44 @@
+body{
+    background-color: #2F4F4F;
+}
+.div-login{
+    position: relative;
+    width: 35%;
+    margin-left:32%;
+    margin-top:15%;
+}
+
+fieldset{
+    position:relative;
+    border-radius: 15px 20px;
+	text-align: center;
+	width:auto;
+    background-color: #FFFFFF;
+    
+}
+.btn:hover { 
+    background-color:#2F4F4F;
+    color: #FFF;
+}
+.campo1{
+    position: absolute;
+    width: 50%;
+}
+.campo2{
+    position: relative;
+    width: 50%;
+}
+.btn{
+    background-color: #778899;
+    color: #FFF;
+    position: relative;
+    margin-top:4%;
+}
+.pass{
+    margin-top:1%;
+}
+
+.form-control{
+    width: 80%;
+    margin-left:10%;
+}

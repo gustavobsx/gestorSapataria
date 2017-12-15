@@ -1,0 +1,51 @@
+<div class="col-12" id="slide-5" data-slide="5">
+<div class="col-sm-4"></div>
+	<div class="col-md-6">
+		<div class="cad-funcionario col-sm-4" id="container-pag"> <!-- Inicio do container -->
+		<div class="div-cadastro">
+						<div id="titulo-pag"><b>CADASTRO DE FUNCIONARIOS</b></div>
+							<fieldset class="fieldset-1">
+										<form class="form-cadastro" >
+													<table class="table table-responsive">
+															<div id="titulo-pag"><b>INSIRA OS DADOS</b></div>
+															<tr>
+																<td>CPF:</td>
+																<td> <input type="text" id="cpfFunc" maxlength="11" size="13"/></td>
+															</tr>
+															<tr><td>Nome do funcionario:</td> 
+																<td><input type="text" id="nomeFunc" size="30"/></td>
+															</tr>
+															<tr>
+																<td>Telefone:</td>
+																<td><input tye="text" id="telefoneFunc" maxlength="14" size="17"/></td>
+															</tr>
+															<tr>
+																<td>Login:</td>
+																<td><input type="text" id="loginFunc" maxlength="18" size="20"/></td>
+															</tr>
+															<tr>
+																<td>Senha:</td> 
+																<td><input id="senhaFunc" type="password" maxlength="10" size="12"/></td>
+															</tr>	
+															<tr>
+																<td>Confirme a senha:</td> 
+																<td><input type="password" id="confSenha" maxlength="10" size="12"/></td>
+															</tr>
+												</table>
+										</form>	
+							</fieldset></br>
+							
+							
+							<div class="titulo-pag">
+								<button class="btn btn-gestor" id="btn-mensagem" onclick="SAPATARIA.funcionario.cadastro()" data-target="#modal-mensagem" >Salvar Funcionario</button>
+								<button class="btn btn-gestor" onclick="SAPATARIA.funcionario.limpar()">Limpar Campos</button>
+							</div>
+					</div> <!-- FECHA A DIV TABELA-FORMULARIO -->
+		</div><!-- Fecha o container -->
+		<div class="col-sm-4"></div>
+	</div>
+	</div>
+
+	
+	<script src="../paginas/funcionario/js/funcionarios.js"></script>
+	

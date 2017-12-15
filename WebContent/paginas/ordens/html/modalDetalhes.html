@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<head>
+  <meta charset="UTF-8">
+</head>
+	<input name="num-Ordem" id="numero_ordem" type="hidden"></input>
+	<table class="table table-responsive tabela-consulta">	
+		<tr>
+			<td>Nome do Cliente:</td>
+			<td><input id="nome" name="nome" type="text" size="40" readonly="readonly"></input></td>
+		</tr>
+		<tr>
+			<td>CPF:</td>
+			<td><input id="cpf" name="cpf" type="text" maxlength="11" size="13"></input></td>
+		</tr>
+		<tr>
+			<td>Telefone:</td>
+			<td><input id="telefone" name="telefone" type="text" maxlength="11" size="11"></input></td>
+		</tr>
+		<tr>
+			<td>Quantidade:</td>
+			<td><input id="quantidade" name="quant" type="text" maxlength="4" size="4"></input></td>
+		</tr>
+		<tr>
+			<td>Produto:</td>
+			<td><input id="produto" name="prod" type="text" size="40"></input></td>
+		</tr>
+		<tr>
+			<td>Valor:</td>
+			<td><input id="valor" name="val" type="text" size="6" placeholder="15,45"></input><td>
+		</tr>
+		<tr>
+			<td>Descrição:</td>
+			<td><textarea id="descricao" class="desc" rows="5" cols="42"></textarea><td>
+		</tr>
+		<tr>
+			<td>Data de entrega:</td>
+			<td><input name="data" type="text" size="10" maxlength="10" id="data_entrega" placeholder="DD/MM/AAAA"></input><td>
+		</tr>
+		<tr>
+			<td>Status da ordem:</td>
+			<td><input id="status" type="text" size="14" readonly="readonly"></input><td>
+		</tr>
+		<tr>
+			<td>Opções de status disponiveis:</td>
+			<td id="status_ordem">
+				<select name="select" id="status_op">
+						<option value="0">Escolha uma opção</option>
+						<option value="Em Aberto">Em Aberto</option>
+						<option value="Orçamento">Orçamento</option>
+						<option value="Sem conserto">Não é possivel o conserto</option>
+						<option value="Retorno">Retorno</option>
+						<option value="Finalizado">Finalizado</option>
+						<option value="Entregue">Entregue ao cliente</option>
+				</select>
+			<td>	
+		</tr>
+	</table>

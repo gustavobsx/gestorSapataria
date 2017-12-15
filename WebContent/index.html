@@ -1,0 +1,31 @@
+<html>
+ <meta charset="UTF-8"/>
+ <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/cookie.js"></script>
+ </head>
+ <body>
+    <div class="div-login">
+    	<img id="logo-index" src="css/logo.png" width="380" height="61"/>
+    	</br></br></br>
+        <fieldset class="f-login">
+	        <form name="input" action="LoginServlet" method="post">
+	            <h2 class="ls-login-logo">Vamos fazer o login?</h2>
+	                    <div>
+	                        <label for="userLogin"></label>
+	                        <input class="form-control  input-lg" id="login" name="login" type="text" placeholder="Usuário">
+	                    </div>
+	                    <div>
+	                        <label for="userPassword"></label>
+	                        <input class="pass form-control input-lg" id="senha" name="senha" type="password" placeholder="Senha">
+	                    </div>
+	                    <input type="submit" id="btn-login" value="Entrar" onclick="SAPATARIA.cookie()" class="btn btn-lg " title="Login">
+	        </form>
+        </fieldset>
+    </div>
+ </body>
+</html>

@@ -1,0 +1,35 @@
+<meta charset="UTF-8"/>
+<div class="col-12" id="slide-2" data-slide="2">
+	<div class="col-sm-4"></div>
+			<div class="col-sm-5 container-clientes cad-cliente"> <!-- Inicio do container -->
+					<!--DIV QUE CONTEM A TABELA-FORMULARIO DE CADASTRO DE CLIENTES -->
+						<div id="titulo-pag"><b>CADASTRO DE CLIENTES</b></div>
+							<form class="form-cadastro">
+								<fieldset class="fieldset-1">
+										
+													<table class="table table-responsive">
+															<div id="titulo-pag"><b>INSIRA OS DADOS</b></div>
+															<tr>
+																<td>Nome do cliente: <input type="text" id="nomeCliente" size="60"/></td>
+															</tr>
+															<tr>
+																<td>CPF: <input type="text" id="cpfCliente"/>
+																	Telefone: <input type="text" size="20" id="telCliente" />
+																	CEP: <input type="text"maxlength="8" size="12" id="cepCliente" /></td>
+															</tr>
+															<tr>
+																<td>Endereço: <input type="text" size="50" id="enderecoCliente" />
+																	Número: <input type="text" size="5" id="numeroCliente"/></td>
+															</tr>
+												</table>
+										
+								</fieldset><br>
+							<div class="titulo-pag">	
+								<button type="submit" class="btn btn-gestor" value="submit" onclick="SAPATARIA.cliente.cadastro()">Salvar Cliente</button>
+								<button class="btn btn-gestor" class="btn btn-form" onclick="SAPATARIA.cliente.limpar()" >Limpar Campos</button>
+							</div>
+							</form>
+            </div>
+            <div class="col-sm-4"></div>
+</div>
+<script src="../paginas/clientes/js/clientes.js"></script>

@@ -1,0 +1,239 @@
+
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-semibold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+#slide-4{
+    background-color: orange;
+}
+
+
+body {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+.justify-text {
+	text-align: justify;
+}
+
+
+.slidee {
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 65px;
+	padding-top: 60px;
+	text-align: center;
+	width: 100%;
+}
+
+.primeiro {
+    height: 100%;
+    background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 65px;
+	padding-top: 60px;
+	text-align: center;
+}
+#slide-1 {
+	background-color: #4682B4;
+	color: #ffffff;
+    height: 100%;
+	background-attachment: relative;
+	background-position: center center;
+}
+#slide-2 {
+	background-color: #1abc9c;
+	color: #e4e6e5;
+	padding-top: 90px;
+	height: 100%;
+}
+#slide-2-1 {
+	background-color: #1abc9c;
+	color: #e4e6e5;
+	padding-top: 90px;
+	
+}
+
+#slide-3 {
+    height: 100%;
+}	
+
+#slide-4 {
+	background-color: #34495e;
+	color: #e4e6e5;
+	padding-top: 90px;
+	height: 100%;
+}
+#slide-4-1 {
+	background-color: #34495e;
+	color: #e4e6e5;
+	padding-top: 90px;
+}
+
+
+#slide-5 {
+	background-color: #f39c12;
+	color: #e4e6e5;
+	padding-top: 90px;
+    height: 100%;
+}
+
+#slide-6{
+	background-color: #2f2f2f;
+	color: #e4e6e5;
+    height: 100%;
+}
+
+#slide-7 {
+	background-color: #e4e6e5;
+	color: #4e4e4e;
+	font-size: 35px;
+	line-height: 50px;
+	text-align: center;
+    height: 100%;
+}
+
+
+
+/* Controla o submenu estoque */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+/* CSS PESSOAIS */
+.div-cadastro{
+	font-size:16px;
+	padding: 5px;
+}
+.div-consulta{
+	font-size:16px;
+	padding: 5px;
+}
+#titulo-pag{
+	font-size: 40px;
+}
+#tabela-1e2{
+	font-size: 22px;
+}
+
+
+fieldset{
+	border:1px solid #FFFFFF;
+	border-
+	text-align: center;
+	width:auto;
+}
+.btn-form{
+	background-color: #696969;
+	color: #FFFFFF;
+}
+.tabela-consulta.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #696969;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+.btn-texto-branco:hover{
+	color:#C0C0C0;
+}
+.btn-texto-branco{
+	background-color: #808080;
+	color: #fff;
+}
+.btn-pesquisa:hover{
+	color:#C0C0C0;
+}
+.btn-form1:hover{
+	color:#C0C0C0;
+}
+.btn-form1{
+	 background-color:#808080;
+}
+.paginacao-1{
+	font-size: 30px;
+}
+
+#filtro-quantidade{
+	position: absolute;
+margin-left: 60%;
+margin-top: -6%;
+}
+#titulo-tabela{
+	font-size: 30px;
+}
+#num-ordem{
+	color:#B0C4DE;
+	font-size:40px;	
+	}
+.btn-default{
+	background-color:#808080;
+}
+#campo-pwd{
+	margin-left:7%
+}
+i {
+		font-size: 80px;
+		color: white;
+	}
+.title-row {
+	font-size: 34px;
+	padding-bottom: 33px;
+}
+.content-row {
+	padding-top: 29px;
+}	
+#home-row-1 h1 {
+	font-size: 54px;
+}
+
+#home-row-1 h4 {
+	font-size: 32px;
+}
+.paginass{
+	width: 100%;
+    height: 100%;	
+}

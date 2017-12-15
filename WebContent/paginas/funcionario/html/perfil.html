@@ -1,0 +1,42 @@
+<div class="col-12" id="slide-5" data-slide="5">
+<div class="col-sm-4"></div>
+	<div class="col-md-6">
+		<div class="cad-funcionario col-sm-4" id="container-pag"> <!-- Inicio do container -->
+		<div class="div-cadastro">
+						<div id="titulo-pag"><b>Esses são seus dados cadastrados</b></div>
+							<fieldset class="fieldset-1">
+										<form class="form-cadastro" >
+													<table class="table table-responsive">
+															<tr><td>Nome:</td> 
+																<td><input type="text" id="nomeFunc" size="30" readonly="readonly"/></td>
+															</tr>
+															<tr>
+																<td>CPF:</td>
+																<td> <input type="text" id="cpfFunc" maxlength="11" size="13" readonly="readonly"/></td>
+															</tr>
+															<tr>
+																<td>Telefone:</td>
+																<td><input tye="text" id="telefoneFunc" maxlength="14" size="14" readonly="readonly"/></td>
+															</tr>
+															<tr>
+																<td>Login:</td>
+																<td><input tye="text" id="loginFunc" size="14" readonly="readonly"/></td>
+															</tr>
+												</table>
+										</form>	
+							</fieldset></br>
+							
+							
+							<div class="titulo-pag">
+								<button class="btn btn-gestor" id="btn-mensagem" onclick="SAPATARIA.funcionario.editar()" data-target="#modal-mensagem" >Quer alterar algo?</button>
+								<button class="btn btn-gestor" onclick="SAPATARIA.home()">Voltar</button>
+							</div>
+					</div> <!-- FECHA A DIV TABELA-FORMULARIO -->
+		</div><!-- Fecha o container -->
+		<div class="col-sm-4"></div>
+	</div>
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="../paginas/css/menu.css">
+	<script src="../paginas/funcionario/js/funcionarios.js"></script>
+	
